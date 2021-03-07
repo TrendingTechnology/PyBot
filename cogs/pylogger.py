@@ -30,13 +30,13 @@ url = os.environ.get("logs")
 colors = [""]
 
 
-class devEvents(commands.Cog):
+class PyEvents(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
     @commands.Cog.listener()
     async def on_ready(self):
-        print("devEvents cog loaded")
+        print("PyEvents cog loaded")
 
     @commands.Cog.listener()
     async def on_message_edit(self, before, after):
@@ -108,7 +108,7 @@ class devEvents(commands.Cog):
                     name="\u200b", value=f"**[Invite created]({invite})**", inline=False
                 )
                 e.set_author(name="Log", icon_url="https://i.imgur.com/fXUI76n.png")
-                e.set_footer(text="DevBot Logging")
+                e.set_footer(text="PyBot Logging")
                 await webhook.send(embed=e)
         except Exception:
             pass
@@ -121,7 +121,7 @@ class devEvents(commands.Cog):
                 e = discord.Embed()
                 e.add_field(name="\u200b", value=f"Invite deleted", inline=False)
                 e.set_author(name="Log", icon_url="https://i.imgur.com/fXUI76n.png")
-                e.set_footer(text="DevBot Logging")
+                e.set_footer(text="PyBot Logging")
                 await webhook.send(embed=e)
         except Exception:
             pass
@@ -228,4 +228,4 @@ class devEvents(commands.Cog):
 
 
 def setup(bot):
-    bot.add_cog(devEvents(bot))
+    bot.add_cog(PyEvents(bot))

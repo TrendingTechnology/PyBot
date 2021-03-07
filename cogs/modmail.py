@@ -46,7 +46,7 @@ class ModMail(commands.Cog):
                 await ctx.send("**You cannot report yourself**")
             else:
 
-                report_channel = self.bot.get_channel(809456446194319420)
+                report_channel = self.bot.get_channel(813688372589363212)
                 embed = discord.Embed(
                     title=f"{ctx.author.name} Reported {member.name}",
                     description=f"Reporter id -> {ctx.author.id}\nReported id -> {member.id}\nReason ->\n{reason}",

@@ -4,10 +4,11 @@ pyproject.toml
 __pycache__/
 *.py[cod]
 *$py.class
-
+pyproject.toml
+poetry.lock
 # C extensions
 *.so
-
+.replit
 # Distribution / packaging
 .Python
 build/
