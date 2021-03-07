@@ -64,6 +64,6 @@ We want your work to be readable by others; therefore, we encourage you to note 
 - Most importantly,
   - **Be consistent in the use of these guidelines when submitting.**
   - Happy coding!
-  
-  
+
+
 Writer [@AyushSehrawat](https://github.com/AyushSehrawat)
