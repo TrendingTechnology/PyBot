@@ -1,0 +1,4 @@
+TOKEN=
+logs =
+
+# create .env with it and put these as env variables :)
