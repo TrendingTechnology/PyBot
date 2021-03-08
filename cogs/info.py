@@ -1,9 +1,13 @@
 import difflib
+import logging
 import re
+import socket
 import unicodedata
 from datetime import datetime
 from typing import Tuple, Union
+
 import discord
+import requests
 from discord import Colour, Embed, utils
 from discord.ext import commands
 from discord.ext.commands import (
