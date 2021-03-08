@@ -1,16 +1,9 @@
 import difflib
-import logging
 import re
-import socket
 import unicodedata
 from datetime import datetime
 from typing import Tuple, Union
-
-import aioping
 import discord
-import pyspeedtest
-import requests
-import speedtest
 from discord import Colour, Embed, utils
 from discord.ext import commands
 from discord.ext.commands import (
